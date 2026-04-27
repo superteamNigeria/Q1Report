@@ -22,13 +22,15 @@ const pillars = [
     title: "Fund",
     body: "Grants and bounties for founders solving real problems. We back Nigerian teams with capital, not just encouragement.",
     link: "Apply for funding",
+    href:"https://superteam.fun/earn/s/superteamnigeria",
   },
   {
     num: "02",
     icon: "★",
     title: "Build",
     body: "Hackathons, sprints, and co-working for serious builders. Ship your first mainnet product with people who've done it before.",
-    link: "See upcoming events",
+    link: "Build with us",
+    href:"https://superteam.fun/build",
   },
   {
     num: "03",
@@ -36,6 +38,7 @@ const pillars = [
     title: "Connect",
     body: "Warm intros to investors, mentors, and teams who get it. Your network becomes your superteam.",
     link: "Meet the network",
+    href:"https://x.com/SuperteamNG",
   },
 ];
 
@@ -69,8 +72,8 @@ export default function SuperteamNigeriaHomepage() {
             </h1>
           
             <div className="hero-ctas">
-              <button className="btn btn-arrow">Join the team</button>
-              <button className="btn btn-ghost btn-arrow">See our impact</button>
+                <a href="https://x.com/SuperteamNG" target="_blank" rel="noopener noreferrer" className="btn btn-arrow">Join Our Community</a>
+                   <a href="https://drive.google.com/file/d/1YoXodiE5IgG-EzzfdXPNTt5f2lqboNcb/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="btn btn-ghost btn-arrow">See our Impact</a>
             </div>
           </div>
 
@@ -80,7 +83,6 @@ export default function SuperteamNigeriaHomepage() {
               Impact
               <br />
               Report
-              <span>Now live</span>
             </div>
           </div>
         </div>
@@ -148,7 +150,7 @@ export default function SuperteamNigeriaHomepage() {
               <div className="pillar-icon">{p.icon}</div>
               <h3>{p.title}</h3>
               <p>{p.body}</p>
-              <a href="#" className="pillar-link">
+              <a href={p.href} target="_blank" rel="noopener noreferrer" className="pillar-link">
                 {p.link}
               </a>
             </div>
