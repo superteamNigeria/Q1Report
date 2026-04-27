@@ -86,6 +86,8 @@
   }
   .btn:hover { background: var(--mint-2); transform: translateY(-1px); }
 
+  .nav .btn { color: black; }
+
   .btn-ghost { background: transparent; color: var(--ink); border: 1px solid var(--border); }
   .btn-ghost:hover { background: rgba(157, 240, 194, 0.06); border-color: var(--mint); }
 
@@ -117,7 +119,7 @@
     text-transform: uppercase;
   }
 
-  .hero-content { max-width: 560px; }
+  .hero-content { max-width: 100%; }
 
   .hero-eyebrow {
     display: inline-flex;
@@ -132,7 +134,7 @@
   .hero-eyebrow::before { content: ""; width: 32px; height: 1px; background: var(--mint-2); }
 
   .sn-root h1 {
-    font-size: clamp(48px, 6vw, 84px);
+    font-size: clamp(36px, 8vw, 84px);
     font-weight: 500;
     line-height: 1.02;
     letter-spacing: -0.03em;
@@ -509,7 +511,6 @@
 
   @media (max-width: 960px) {
     .nav { padding: 16px 24px; }
-    .nav-links { display: none; }
     .hero { grid-template-columns: 1fr; min-height: auto; }
     .hero-left { padding: 100px 24px 60px; }
     .hero-right { min-height: 400px; }
@@ -527,6 +528,10 @@
   }
 
   @media (max-width: 600px) {
+    .nav { flex-direction: column; gap: 16px; justify-content: center; text-align: center; padding-top: 24px; }
+    .hero-left { padding: 140px 16px 40px; }
+    .hero-ctas { flex-direction: column; width: 100%; }
+    .hero-ctas .btn { justify-content: center; width: 100%; box-sizing: border-box; }
     .stats-grid { grid-template-columns: 1fr; }
     .stat { padding: 32px 24px; }
     .stat-num { font-size: 42px; }
