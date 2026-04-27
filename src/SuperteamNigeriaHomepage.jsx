@@ -137,10 +137,6 @@ export default function SuperteamNigeriaHomepage() {
               Fund. Build. <em>Connect.</em>
             </h2>
           </div>
-          <p className="section-lede">
-            Three things, done well. No bureaucracy, no gatekeepers — just work
-            that ships.
-          </p>
         </div>
 
         <div className="pillars">
