@@ -31,15 +31,14 @@ export default function SuperteamNigeriaHomepage() {
             </h1>
           
             <div className="hero-ctas">
-                <a href="https://x.com/SuperteamNG" target="_blank" rel="noopener noreferrer" className="btn btn-arrow">Join Our Community</a>
-                   <a href="https://drive.google.com/file/d/1YoXodiE5IgG-EzzfdXPNTt5f2lqboNcb/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="btn btn-ghost btn-arrow">See our Impact</a>
+                   <a href="https://drive.google.com/file/d/1YoXodiE5IgG-EzzfdXPNTt5f2lqboNcb/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="btn btn-ghost btn-arrow">See full Report</a>
             </div>
           </div>
 
           <div className="hero-badge">
             <div className="q1-tile">Q1</div>
             <div className="q1-label">
-              Impact
+             2026 Impact
               <br />
               Report
             </div>
